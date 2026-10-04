@@ -1,0 +1,16 @@
+{
+        "version": "0.2.0",
+        "configurations": [
+                {
+                        "name": "local-rag smoke",
+                        "type": "debugpy",
+                        "request": "launch",
+                        "module": "local_rag.cli",
+                        "args": ["smoke"],
+                        "python": "${workspaceFolder}/.venv/bin/python",
+                        "cwd": "${workspaceFolder}",
+                        "console": "integratedTerminal",
+                        "justMyCode": false
+                }
+        ]
+}

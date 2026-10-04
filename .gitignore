@@ -1,0 +1,17 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment (rebuilt by `uv sync`, never committed)
+.venv/
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+
+# Local settings and secrets
+.env
+
+# Source PDFs (copyrighted, binary) and generated data (vector index, memory)
+data/*.pdf
+storage/

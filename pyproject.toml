@@ -1,0 +1,36 @@
+[project]
+name = "local-rag"
+version = "0.1.0"
+description = "A local RAG for experimentation"
+readme = "README.md"
+authors = [
+    { name = "Imad RAFAI", email = "imad.rafai@yahoo.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "langchain>=1.4.3",
+    "langchain-ollama>=1.1.0",
+    "pypdf>=6.19.0",
+    "typer>=0.27.2",
+]
+
+[project.scripts]
+local-rag = "local_rag.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+    "ty>=0.0.84",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF"]
